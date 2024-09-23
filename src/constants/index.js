@@ -10,7 +10,7 @@ export const ABOUT_TEXT = `I'm a first-year Master's student in Computer Science
 export const EXPERIENCES = [
   {
     year: "June, 2024 - Present",
-    role: "AI | Software Engineer",
+    role: "Research AI | Software Engineer",
     company: "People and Robotics Lab",
     description: `Leading a 4 member team in the development of a Full Stack Video Analysis tool using React, Flask, and PostgreSQL. Engineered a custom object detection pipeline using Python and OpenCV Library, generating timestamped labels for
 objects in a video. Implemented 7 RESTful APIs using Flask, with thorough testing and documentation using Postman.`,
@@ -18,7 +18,7 @@ objects in a video. Implemented 7 RESTful APIs using Flask, with thorough testin
   },
   {
     year: "Oct, 2023 - Sep, 2024",
-    role: "Software Engineer",
+    role: "Student Software Engineer",
     company: "Demic. Inc",
     description: `Collaborated with the core team in an agile environment to resolve 12+ bugs and transformed 500+ lines of React Native codebase from Javascript to Typescript for better code maintainability. Implemented a gallery feature allowing users to connect based on shared interests and redesigned Firebase database architecture to accommodate student organizations registering within the app.`,
     technologies: ["ReactNative", "Typescript", "Firebase", "TailwindCSS"],

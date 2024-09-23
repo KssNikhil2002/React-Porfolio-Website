@@ -46,7 +46,7 @@ const Hero = () => {
 
         <div className="mt-10 space-x-4">
           <a
-            href="https://drive.google.com/file/d/1yyv_0YS19LV4aLAJBXSaa1Zenxj6HE7L/view?usp=sharing"
+            href="https://drive.google.com/file/d/102_OJVSzwp5X7M2tzc3n9pUrmevXLDSA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 border-2 border-black rounded-full font-semibold hover:bg-gray-100 transition-colors"

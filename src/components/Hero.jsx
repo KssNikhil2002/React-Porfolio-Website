@@ -15,7 +15,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-center py-20 lg:py-28 lg:flex-row lg:justify-center lg:space-x-16">
+    <div className="min-h-screen flex flex-col justify-center items-center text-center py-20 pt-32 lg:py-28 lg:pt-32 lg:flex-row lg:justify-center lg:space-x-16">
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -26,7 +26,7 @@ const Hero = () => {
         <img
           src={profilepic}
           alt="Nikhil Kruthiventi"
-          className="rounded-full w-64 h-64 lg:w-80 lg:h-80 object-cover shadow-xl"
+          className="rounded-full w-64 h-64 lg:w-80 lg:h-80 object-cover border-4 border-white shadow-lg"
         />
       </motion.div>
 
@@ -36,26 +36,26 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <p className="text-xl font-light text-gray-500 mb-3">Hello, I am</p>
-        <h1 className="text-5xl font-bold text-black mt-2">Kruthiventi Nikhil</h1>
-        <h2 className="text-4xl text-gray-600 font-semibold mt-5">
+        <p className="text-lg font-normal text-gray-600 mb-3">Hello, I am</p>
+        <h1 className="text-4xl lg:text-5xl font-semibold text-gray-800 mt-2">Kruthiventi Nikhil</h1>
+        <h2 className="text-2xl lg:text-3xl text-gray-700 font-normal mt-5">
           {/* Typing animation */}
           <span>{text}</span>
-          <span className="text-black">|</span> {/* Cursor effect */}
+          <span className="text-gray-800">|</span> {/* Cursor effect */}
         </h2>
 
-        <div className="mt-10 space-x-4">
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-4 justify-center items-center">
           <a
             href="https://drive.google.com/file/d/102_OJVSzwp5X7M2tzc3n9pUrmevXLDSA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 border-2 border-black rounded-full font-semibold hover:bg-gray-100 transition-colors"
+            className="w-full sm:w-auto px-8 py-3 border border-gray-300 rounded-lg font-medium bg-white hover:bg-gray-50 transition-colors text-gray-700 text-center"
           >
             Download CV
           </a>
           <a
             href="#contact"
-            className="px-5 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
+            className="w-full sm:w-auto px-8 py-3 bg-gray-800 text-white rounded-lg font-medium hover:bg-gray-700 transition-colors text-center"
           >
             Contact Info
           </a>

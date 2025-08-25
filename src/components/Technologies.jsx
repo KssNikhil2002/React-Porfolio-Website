@@ -19,93 +19,87 @@ const iconvariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className=" pb-24">
+    <div className="pb-32 px-6 lg:px-16">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl font-semibold"
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-3xl font-medium text-gray-800"
       >
         Technologies
       </motion.h1>
       <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 2.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 0.4 }}
+        className="max-w-6xl mx-auto"
       >
+        <div className="flex items-center justify-center gap-12 flex-wrap">
+      
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(2.5)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-5xl text-cyan-400" />
+          <RiReactjsLine className="text-4xl text-cyan-500 hover:text-cyan-600 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(3)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandNextjs className="text-5xl" />
+          <TbBrandNextjs className="text-4xl text-gray-800 hover:text-black transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(2)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoPostgresql className="text-5xl text-cyan-400" />
+          <BiLogoPostgresql className="text-4xl text-blue-600 hover:text-blue-700 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(2.5)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiTypescript className="text-5xl text-blue-600" />
+          <SiTypescript className="text-4xl text-blue-600 hover:text-blue-700 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(5)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiJavascript className="text-5xl text-yellow-400" />
+          <SiJavascript className="text-4xl text-yellow-500 hover:text-yellow-600 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(4)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPython className="text-5xl text-blue-400" />
+          <SiPython className="text-4xl text-blue-500 hover:text-blue-600 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(2.5)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiFirebase className="text-5xl text-orange-400" />
+          <SiFirebase className="text-4xl text-orange-500 hover:text-orange-600 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(6)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiPytorch className="text-5xl text-red-600" />
+          <SiPytorch className="text-4xl text-red-600 hover:text-red-700 transition-colors" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconvariants(3)}
-          className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiTailwindcss className="text-5xl text-sky-400" />
+          <SiTailwindcss className="text-4xl text-cyan-500 hover:text-cyan-600 transition-colors" />
         </motion.div>
+        </div>
       </motion.div>
     </div>
   );

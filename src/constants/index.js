@@ -5,49 +5,69 @@ import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am an aspiring Full Stack Software Engineer and passionate about Artificial Intelligence and Machine Learning.`;
 
-export const ABOUT_TEXT = `I'm a first-year Master's student in Computer Science at UW-Madison, specializing in Artificial Intelligence and Machine Learning. With a strong foundation in full-stack development, I have hands-on experience with frontend technologies like React.js and React Native, as well as backend technologies including Node.js, Express.js, Flask, and databases like MySQL and PostgreSQL. My passion for machine learning drives my work in developing algorithms using Python and PyTorch, blending my expertise in software development with cutting-edge AI techniques.`;
+export const ABOUT_TEXT = `I'm a Computer Science graduate student at UW-Madison with a passion for building AI-powered solutions that make a real impact. From developing multi-agent AI pipelines at Nutanix to leading full-stack development teams, I thrive at the intersection of cutting-edge technology and practical problem-solving. When I'm not architecting scalable systems or diving into machine learning research, you'll find me on the cricket field—where I helped bring home a national championship. I believe the best software bridges complex technology with human needs, and I'm excited to continue pushing those boundaries in my upcoming roles at Amazon and beyond.`;
 
 export const EXPERIENCES = [
   {
-    year: "June, 2024 - Present",
-    role: "Research AI | Software Engineer",
+    year: "Sept 2025 - Dec 2025",
+    role: "Software Engineer Intern",
+    company: "Amazon",
+    description: `Incoming Fall 2025 Software Engineer Intern, part of the Amazon Stores Team.`,
+    technologies: [],
+  },
+  {
+    year: "Jun 2025 - Aug 2025",
+    role: "Member of Technical Staff (Data/GenAI) - Intern",
+    company: "Nutanix",
+    description: `Developed a multi-agent AI pipeline using LangGraph and LLaMA to validate firmographics through deep web research, reducing validation time by 92% (12 min to 1 min). Implemented a FastAPI microservice integrating Slack, Outlook, and text-to-SQL tools, reducing data correction timelines from months to a week. Orchestrated the system using Airflow and led UAT/regression testing, achieving 92% firmographic data accuracy.`,
+    technologies: ["LangGraph", "LLaMA", "FastAPI", "Airflow", "SQL"],
+  },
+  {
+    year: "June 2024 - Dec 2024",
+    role: "Research Software Engineer Intern",
     company: "People and Robotics Lab",
-    description: `Leading a 4 member team in the development of a Full Stack Video Analysis tool using React, Flask, and PostgreSQL. Engineered a custom object detection pipeline using Python and OpenCV Library, generating timestamped labels for
-objects in a video. Implemented 7 RESTful APIs using Flask, with thorough testing and documentation using Postman.`,
-    technologies: ["Javascript", "React.js", "Python", "PostgreSQL", "OpenCV", "Flask", "Postman"],
+    description: `Led a 4-member team in developing a Video Analysis Tool for Qualitative Research using React, Flask, and PostgreSQL, exceeding existing tools in usability according to 80% of pilot users. Developed a Python script using YOLO and WhisperX to generate timestamped transcripts and object labels. Integrated an AI chatbot using LangChain and GeminiAPI, reducing information discovery time by 80%.`,
+    technologies: ["React", "Flask", "PostgreSQL", "YOLO", "LangChain"],
   },
   {
-    year: "Oct, 2023 - Sep, 2024",
+    year: "Jan 2024 - May 2024",
+    role: "Software Engineer Intern (Capstone)",
+    company: "Holos",
+    description: `Built a VR/AR educational app on F1 using Unity and designed 3D assets in Blender. Developed a C# script integrating ChatGPT and WhisperGPT for real-time speech-to-text. Led Agile development as Scrum Master, implementing Scrum and JIRA, achieving 90% stakeholder satisfaction.`,
+    technologies: ["Unity", "C#", "Blender", "JIRA"],
+  },
+  {
+    year: "Oct 2023 - May 2024",
     role: "Student Software Engineer",
-    company: "Demic. Inc",
-    description: `Collaborated with the core team in an agile environment to resolve 12+ bugs and transformed 500+ lines of React Native codebase from Javascript to Typescript for better code maintainability. Implemented a gallery feature allowing users to connect based on shared interests and redesigned Firebase database architecture to accommodate student organizations registering within the app.`,
-    technologies: ["ReactNative", "Typescript", "Firebase", "TailwindCSS"],
+    company: "Demic",
+    description: `Collaborated with the core team in an agile environment to migrate a 3000+ lines React Native codebase from JavaScript to TypeScript for better code maintainability. Created database indexes to optimize queries, improving data retrieval efficiency and resolved 12+ bugs.`,
+    technologies: ["React Native", "TypeScript", "JavaScript", "Database Optimization"],
   },
   {
-    year: "Jan, 2024 - May, 2024",
-    role: "Software Engineer Intern", 
-    company: "Holos. Inc",
-    description: `Developed an AR/VR educational app on F1 using Unity and designed a 3D model of an F1 car using Blender. Implemented a C# script to seamlessly integrate OpenAI’s ChatGPT and WhisperGPT. Served as Scrum Master and implemented agile methodologies like Scrum, Lean Canvas, and JIRA for task tracking`,
-    technologies: ["Unity", "C#", "Blender"],
+    year: "Oct 2023 - Jan 2024",
+    role: "Machine Learning Research Assistant",
+    company: "University of Wisconsin Madison",
+    description: `Cleaned and annotated 2,000+ mosquito images using Roboflow, developing an ML pipeline with image quality assessment, custom trained YOLO object detection, and SAM segmentation to classify mosquito species. Built a CNN classifier using segmentation masks, improving species classification accuracy by 45% over baseline.`,
+    technologies: ["Python", "Roboflow", "YOLO", "SAM", "CNN", "Computer Vision"],
   },
   {
-    year: "Oct, 2023 - Feb, 2024",
-    role: "NLP Research Assistant",
-    company: "MaDPL Lab",
-    description: `Conducted a comprehensive literature review of 8 research articles to understand the prompt sensitive and hallucinating nature of Large Language Models, informing the scope of the research. Developed a Python script using Microsoft Azure’s ChatGPT API and prompting principles like Few-Shot prompting, decreasing response multiplicity by 40%.`,
-    technologies: ["Python", "LLMs", "HuggingFace"],
+    year: "Oct 2023 - Feb 2024",
+    role: "Teaching Assistant",
+    company: "Microsoft TEALS",
+    description: `Provided individualized support to 30 students as a Teaching Assistant in an AP Computer Science Java class. Created comprehensive problem sets on object-oriented programming, recursion, and loops and held online office hours, resulting in a 25% increase in student engagement.`,
+    technologies: ["Java", "Object-Oriented Programming", "Teaching"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "UnionHub | Ongoing Project",
+    title: "GitFlowAI",
     image: project1,
-    type: "Full Stack Web Development",
+    type: "AI-Powered Developer Productivity",
     description:
-      "A One Stop Platform for Wisconsin Union Admin tasks and automate the process by 80 percent.",
-    technologies: ["Next.js", "TailwindCSS", "PostgreSQL", "NextAuth.js"],
-    github: "https://github.com/KssNikhil2002/UnionHub", 
+      "Built an AI-based developer productivity app using Next.js and tRPC, integrating a RAG pipeline with LangChain and PGVector for intelligent GitHub repository querying and AssemblyAI for extracting issues from meeting audio.",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "PrismaORM", "Clerk", "NeonDB", "tRPC", "LangChain", "PGVector", "AssemblyAI"],
+    github: "https://github.com/KssNikhil2002/GitFlowAI", 
     dates: "Present", 
   },
   {

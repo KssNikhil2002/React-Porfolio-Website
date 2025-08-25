@@ -8,10 +8,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full py-6 px-8 flex justify-center">
+    <div className="w-full py-6 px-8 flex justify-center bg-gray-50/95 fixed top-0 z-50 backdrop-blur-sm">
       <nav className="w-full max-w-screen-lg flex justify-between items-center">
         {/* Left Section (Name or Logo) */}
-        <div className="text-3xl font-bold text-black">
+        <div className="text-2xl font-semibold text-gray-800">
           KN
         </div>
 
@@ -40,28 +40,28 @@ const Navbar = () => {
         </div>
 
         {/* Right Section (Navigation Links for large screens) */}
-        <div className="hidden lg:flex space-x-8 text-xl">
+        <div className="hidden lg:flex space-x-8 text-base">
           <a
             href="#about"
-            className="hover:underline hover:text-slate-600 transition duration-200"
+            className="font-medium text-gray-700 hover:text-gray-900 transition duration-200"
           >
             About
           </a>
           <a
             href="#experience"
-            className="hover:underline hover:text-slate-600 transition duration-200"
+            className="font-medium text-gray-700 hover:text-gray-900 transition duration-200"
           >
             Experience
           </a>
           <a
             href="#projects"
-            className="hover:underline hover:text-slate-600 transition duration-200"
+            className="font-medium text-gray-700 hover:text-gray-900 transition duration-200"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="hover:underline hover:text-slate-600 transition duration-200"
+            className="font-medium text-gray-700 hover:text-gray-900 transition duration-200"
           >
             Contact
           </a>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden absolute top-16 right-0 w-full bg-white shadow-md flex flex-col space-y-4 p-6 z-50">
+          <div className="lg:hidden absolute top-20 right-0 w-full bg-gray-50/95 backdrop-blur-sm flex flex-col space-y-4 p-6 z-50">
             <a
               href="#about"
               className="hover:text-slate-600 hover:underline transition duration-200"
